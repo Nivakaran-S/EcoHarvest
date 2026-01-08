@@ -1,0 +1,43 @@
+{
+    "name": "ecoharvest-backend",
+    "version": "1.0.0",
+    "description": "EcoHarvest Microservices Backend",
+    "private": true,
+    "workspaces": [
+        "packages/*",
+        "services/*"
+    ],
+    "scripts": {
+        "install:all": "npm install && npm run install:services",
+        "install:services": "cd services/auth-service && npm install && cd ../user-service && npm install && cd ../product-service && npm install && cd ../order-service && npm install && cd ../cart-service && npm install && cd ../payment-service && npm install && cd ../vendor-service && npm install && cd ../notification-service && npm install && cd ../admin-service && npm install && cd ../review-service && npm install && cd ../search-service && npm install",
+        "dev": "concurrently \"npm run dev:gateway\" \"npm run dev:auth\" \"npm run dev:user\" \"npm run dev:product\" \"npm run dev:order\" \"npm run dev:cart\" \"npm run dev:payment\" \"npm run dev:vendor\" \"npm run dev:notification\" \"npm run dev:admin\" \"npm run dev:review\" \"npm run dev:search\"",
+        "dev:gateway": "cd gateway && npm run dev",
+        "dev:auth": "cd services/auth-service && npm run dev",
+        "dev:user": "cd services/user-service && npm run dev",
+        "dev:product": "cd services/product-service && npm run dev",
+        "dev:order": "cd services/order-service && npm run dev",
+        "dev:cart": "cd services/cart-service && npm run dev",
+        "dev:payment": "cd services/payment-service && npm run dev",
+        "dev:vendor": "cd services/vendor-service && npm run dev",
+        "dev:notification": "cd services/notification-service && npm run dev",
+        "dev:admin": "cd services/admin-service && npm run dev",
+        "dev:review": "cd services/review-service && npm run dev",
+        "dev:search": "cd services/search-service && npm run dev",
+        "start": "npm run start:gateway & npm run start:services",
+        "start:gateway": "cd gateway && npm start",
+        "start:services": "cd services/auth-service && npm start & cd services/user-service && npm start & cd services/product-service && npm start & cd services/order-service && npm start & cd services/cart-service && npm start & cd services/payment-service && npm start & cd services/vendor-service && npm start & cd services/notification-service && npm start & cd services/admin-service && npm start & cd services/review-service && npm start & cd services/search-service && npm start",
+        "test": "npm run test --workspaces --if-present",
+        "lint": "eslint . --ext .js",
+        "docker:build": "docker-compose build",
+        "docker:up": "docker-compose up -d",
+        "docker:down": "docker-compose down",
+        "docker:logs": "docker-compose logs -f"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2",
+        "eslint": "^8.56.0"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
