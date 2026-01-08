@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import axios from "axios";
 import { useSearchParams } from "next/navigation";
 
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 interface ProductData {
   _id: string;

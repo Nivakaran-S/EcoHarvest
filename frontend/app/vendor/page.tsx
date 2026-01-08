@@ -11,7 +11,7 @@ import saved from "./images/saved.png";
 import orders from "./images/orders.png";
 import reduced from "./images/reduced.png";
 
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 interface VendorStats {
   totalSales: number;

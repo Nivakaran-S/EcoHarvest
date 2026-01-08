@@ -11,7 +11,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 
 
-const BASE_URL = "https://eco-harvest-backend.vercel.app"; 
+const BASE_URL = "/api/proxy"; 
 
 export default function CustomerHome() {
   const [id, setId] = useState("");

@@ -43,7 +43,7 @@ const AllNavCategories: React.FC = () => {
     const fetchCategories = async () => {
       try {
         const response = await axios.get<ProductCategory[]>(
-          'https://eco-harvest-backend.vercel.app/productcategories/'
+          '/api/proxy/productcategories/'
         );
         setProductCategories(response.data);
       } catch (error) {

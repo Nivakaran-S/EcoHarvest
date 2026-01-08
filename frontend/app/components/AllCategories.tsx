@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import PlaceholderImage from "../images/RiceGrainsNoodles.jpg";
 import Loading from "./Loading";
 
-const API_BASE_URL = "https://eco-harvest-backend.vercel.app";
+const API_BASE_URL = "/api/proxy";
 
 interface ProductCategory {
   _id: string;

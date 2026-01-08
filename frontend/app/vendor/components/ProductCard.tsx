@@ -9,7 +9,7 @@ interface ProductCardProps {
   onEdit: (product: Product) => void;
 }
 
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, onDelete, onEdit }) => {
   const [loading, setLoading] = useState(false);

@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 import { FiCamera, FiSave, FiX } from "react-icons/fi";
 import { useRouter } from "next/navigation";
 
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 interface VendorInfo {
   _id?: string;

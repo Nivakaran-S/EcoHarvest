@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import Max from "../components/Max";
 import { CheckCircle, Download, ArrowRight, Printer } from "lucide-react";
 
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 interface Receipt {
   _id: string;

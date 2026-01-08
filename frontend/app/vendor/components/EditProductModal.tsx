@@ -11,7 +11,7 @@ interface EditProductModalProps {
   onSave: (updatedProduct: Product) => void;
 }
 
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 const EditProductModal: React.FC<EditProductModalProps> = ({
   isOpen,

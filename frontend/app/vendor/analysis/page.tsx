@@ -12,7 +12,7 @@ import {
 } from "./reports";
 
 // ===== Base URL =====
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 // ===== Fetch & generate functions =====
 const handleSalesReport = async () => {

@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import axios from "axios";
 
 // Base URL for API requests
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 const ProfilePage = () => {
   const router = useRouter();

@@ -19,7 +19,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 // ===== Base URL =====
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 // Interfaces
 interface Product {

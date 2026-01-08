@@ -8,7 +8,7 @@ import ProductCard from "../components/ProductCard";
 import EditProductModal from "../components/EditProductModal";
 import { Product } from "../components/types";
 
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 const Products: React.FC = () => {
   const [editModalOpen, setEditModalOpen] = useState(false);

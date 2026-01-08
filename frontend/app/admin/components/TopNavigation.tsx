@@ -8,7 +8,7 @@ import LogoutButton from "../../components/Logout";
 import axios from "axios";
 
 // ==== Config ====
-const BASE_URL = "https://eco-harvest-backend.vercel.app/";
+const BASE_URL = "/api/proxy/";
 
 // ==== Types ====
 export interface Notification {

@@ -18,7 +18,7 @@ import ProfileManagement from "./pages/ProfileManagement";
 import { Notification } from "./components/types";
 
 // ==== Base URL ====
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 interface UserDetails {
   firstName: string;

@@ -10,7 +10,7 @@ import Image from "next/image";
 import { toast } from "react-toastify";
 
 // Base URL for API
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 // ==== Types ====
 interface CartItem {

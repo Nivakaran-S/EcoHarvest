@@ -12,7 +12,7 @@ import { toast } from "react-toastify";
 import Loading from "../components/Loading";
 
 // Base URL for API
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 // Interfaces
 interface CartItem {

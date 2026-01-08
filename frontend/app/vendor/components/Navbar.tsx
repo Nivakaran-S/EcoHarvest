@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { FiBell, FiPlus, FiLogOut, FiMenu } from "react-icons/fi";
 import ProductModal from "./ProductModal";
 
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 interface ProductData {
   name: string;

@@ -12,7 +12,7 @@ import SearchIcon from "../images/search-icon.png";
 import EcoHarvest from "../images/ecoHarvestNavLogo2.png";
 
 // Centralized API base URL
-const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "https://eco-harvest-backend.vercel.app";
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "/api/proxy";
 
 // Define interfaces for props
 interface ProductCategory {

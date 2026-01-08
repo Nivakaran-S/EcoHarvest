@@ -4,7 +4,7 @@ import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 
 // Configuration
-const API_BASE_URL = 'https://eco-harvest-backend.vercel.app';
+const API_BASE_URL = '/api/proxy';
 
 // Types
 interface Payment {

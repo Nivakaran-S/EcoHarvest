@@ -36,7 +36,7 @@ interface PredictionResponse {
 }
 
 // ===== Base URLs =====
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 const PREDICTION_URL = "https://nivakaran-food-classification.hf.space/predict";
 
 const ProductModal: React.FC<ProductModalProps> = ({

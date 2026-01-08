@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-const BASE_URL = 'https://eco-harvest-backend.vercel.app';
+const BASE_URL = '/api/proxy';
 
 interface Advertisement {
   title: string;

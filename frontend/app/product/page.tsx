@@ -13,7 +13,7 @@ import axios from "axios";
 import Loading from "../components/Loading";
 
 // ====== Base URL ======
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 // ====== Types ======
 interface ProductDetail {

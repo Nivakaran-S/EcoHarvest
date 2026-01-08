@@ -3,7 +3,7 @@ import axios, { AxiosInstance, AxiosResponse } from 'axios';
 import { InventoryItem, Vehicle } from './types';
 
 const api: AxiosInstance = axios.create({
-  baseURL: 'https://eco-harvest-backend.vercel.app',
+  baseURL: '/api/proxy',
   withCredentials: true,
 });
 

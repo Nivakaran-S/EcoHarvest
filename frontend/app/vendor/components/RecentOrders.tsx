@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 interface Product {
   productId?: {

@@ -8,7 +8,7 @@ import Image from "next/image";
 import EcoHarvest from "../images/ecoHarvestLogo.png";
 
 // Base URL for API requests
-const BASE_URL = "https://eco-harvest-backend.vercel.app/api/auth";
+const BASE_URL = "/api/proxy/api/auth";
 
 // Define interfaces for type safety
 interface LoginResponse {

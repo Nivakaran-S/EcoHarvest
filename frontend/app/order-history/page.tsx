@@ -11,7 +11,7 @@ import axios from "axios";
 import EmptyCart from "../images/emptyCart.png";
 import Loading from "../components/Loading";
 
-const API_BASE_URL = "https://eco-harvest-backend.vercel.app";
+const API_BASE_URL = "/api/proxy";
 
 // Interfaces
 interface CartItem {

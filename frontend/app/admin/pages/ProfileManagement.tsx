@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Notification } from "../components/types";
 
 // ==== Base URL ====
-const BASE_URL = "https://eco-harvest-backend.vercel.app";
+const BASE_URL = "/api/proxy";
 
 // Types
 interface UserInformation {
